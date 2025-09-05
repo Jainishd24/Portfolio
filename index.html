@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jainish Devpura — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      html { scroll-behavior: smooth; font-family: 'Poppins', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <div id="root"></div>
+    <script type="text/babel">
+      const App = () => (
+        <div className="max-w-4xl mx-auto p-6">
+          <header className="mb-12 text-center">
+            <h1 className="text-4xl font-bold">Jainish Devpura</h1>
+            <p className="text-lg text-gray-600">B.Tech Computer Science Student · MERN & Cloud</p>
+          </header>
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Summary</h2>
+            <p>Motivated B.Tech Computer Science student with expertise in full-stack web development and cloud computing. Experienced in building scalable, user-friendly apps with the MERN stack, with internship experience focused on AWS integration.</p>
+          </section>
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+            <ul className="list-disc list-inside space-y-2">
+              <li><strong>Zomato Clone:</strong> Secure user authentication with MongoDB.</li>
+              <li><strong>Book Record Management:</strong> CRUD operations using HTML, CSS, JS.</li>
+              <li><strong>Book My Show Clone:</strong> Ticket booking with React & Tailwind.</li>
+            </ul>
+          </section>
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+            <p>HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, REST, Tailwind, Git, GitHub, Postman, AWS, GCP</p>
+          </section>
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+            <p>Email: <a href="mailto:jainishdevpura24@gmail.com" className="text-blue-600">jainishdevpura24@gmail.com</a></p>
+            <p>Phone: +91 9588914854</p>
+            <p><a href="https://linkedin.com/in/jainish-devpura" className="text-blue-600">LinkedIn</a> | <a href="https://github.com/Jainishd24" className="text-blue-600">GitHub</a></p>
+          </section>
+        </div>
+      );
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+    </script>
+  </body>
+</html>
